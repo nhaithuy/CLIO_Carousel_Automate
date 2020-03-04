@@ -37,6 +37,7 @@ def get_img_info(num_img):
     while (True):
       try:
         w = eval(input('Enter width: '))
+        break
       except:
         print('Invalid. Try again.')
         pass
@@ -44,6 +45,7 @@ def get_img_info(num_img):
     while (True):
       try:
         h = eval(input('Enter height: '))
+        break
       except:
         print('Invalid. Try again.')
         pass
