@@ -31,8 +31,19 @@ def get_img_info(num_img):
     url = input('Enter url: ')
     alt = input('Enter alt: ')
     caption = input('Enter caption: ')
-    w = eval(input('Enter width: '))
-    h = eval(input('Enter height: '))
+
+    # because these two values are integers, catch errors
+    while (True):
+      try:
+        w = eval(input('Enter width: '))
+      except:
+        pass
+
+    while (True):
+      try:
+        h = eval(input('Enter height: '))
+      except:
+        pass
 
     # create carousel item object
     carousel_item = CarouselItem(url, alt, caption, w, h)
