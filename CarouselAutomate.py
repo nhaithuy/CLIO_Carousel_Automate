@@ -17,6 +17,7 @@ def get_num_img():
       num_img = eval(input('Enter the number of images: '))
       return num_img
     except:
+      print('Invalid. Try again.')
       pass
     
   return num_img
@@ -37,12 +38,14 @@ def get_img_info(num_img):
       try:
         w = eval(input('Enter width: '))
       except:
+        print('Invalid. Try again.')
         pass
 
     while (True):
       try:
         h = eval(input('Enter height: '))
       except:
+        print('Invalid. Try again.')
         pass
 
     # create carousel item object
